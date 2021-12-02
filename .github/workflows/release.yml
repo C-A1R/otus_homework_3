@@ -38,7 +38,7 @@ jobs:
           asset_path: ./print_ip
           asset_name: print_ip.deb
           asset_content_type: application/vnd.debian.binary-package
-      - run: cmake --build . --target doc_doxygen  
+      - run: make doc_doxygen  
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with: 
