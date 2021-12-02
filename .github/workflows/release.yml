@@ -18,6 +18,7 @@ jobs:
       - run: cmake --build .
       - run: cmake --build . --target test
       - run: cmake --build . --target package
+      - run: cmake --build . --target doc_doxygen
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -42,4 +43,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ${{github.workspace}}/docs
