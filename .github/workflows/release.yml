@@ -17,7 +17,6 @@ jobs:
       - run: cmake . -DPATCH_VERSION=${{ github.run_number }}
       - run: cmake --build .
       - run: cmake --build . --target test
-      - run: cmake --build . --target doc_doxygen  
       - run: cmake --build . --target package
       - name: Create Release
         id: create_release
@@ -39,6 +38,7 @@ jobs:
           asset_path: ./print_ip
           asset_name: print_ip.deb
           asset_content_type: application/vnd.debian.binary-package
+      - run: cmake --build . --target doc_doxygen  
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with: 
