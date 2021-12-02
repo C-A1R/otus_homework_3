@@ -10,9 +10,13 @@ find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 find_package(Doxygen)
 if (DOXYGEN_FOUND)
+    message("### DOXYGEN_FOUND")
     # set input and output files
     set(DOXYGEN_IN ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in)
     set(DOXYGEN_OUT ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile)
+
+    message("### IN "${DOXYGEN_IN})
+    message("### OUT "${DOXYGEN_OUT})
 
     # request to configure the file
     configure_file(${DOXYGEN_IN} ${DOXYGEN_OUT} @ONLY)
