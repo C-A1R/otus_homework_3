@@ -1,8 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /home/runner/work/otus_homework_3/otus_homework_3
-# Build directory: /home/runner/work/otus_homework_3/otus_homework_3
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.
-add_test(test_Version "test_Version")
-set_tests_properties(test_Version PROPERTIES  _BACKTRACE_TRIPLES "/home/runner/work/otus_homework_3/otus_homework_3/CMakeLists.txt;99;add_test;/home/runner/work/otus_homework_3/otus_homework_3/CMakeLists.txt;0;")
