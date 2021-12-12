@@ -1,0 +1,22 @@
+Start testing: Dec 12 22:07 UTC
+----------------------------------------------------------
+1/1 Testing: test_Version
+1/1 Test: test_Version
+Command: "/home/runner/work/otus_homework_3/otus_homework_3/test_Version"
+Directory: /home/runner/work/otus_homework_3/otus_homework_3
+"test_Version" start time: Dec 12 22:07 UTC
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_Version" end time: Dec 12 22:07 UTC
+"test_Version" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 12 22:07 UTC
